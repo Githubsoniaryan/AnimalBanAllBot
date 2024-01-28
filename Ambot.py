@@ -46,7 +46,7 @@ RIGHTS = ChatBannedRights(
 
 logging.basicConfig(level=logging.INFO)
 
-print("𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜.....")
+print("𝙅𝙖𝙣𝙬𝙖𝙧𝙧.....")
 
 Riz = TelegramClient('Riz', Var.API_ID, Var.API_HASH).start(bot_token=Var.BOT_TOKEN)
 
@@ -63,7 +63,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"**𝗦𝗽𝗲𝗲𝗱 𝗢𝗳 𝗔𝗯𝗵𝗶𝗠𝗼𝗱𝘇𝗬𝗧 ** \n\n 𝙋𝙤𝙣𝙜 !! `{ms}` ms")
+        await event.edit(f"** 𝙎𝙥𝙚𝙚𝙙 𝙤𝙛 𝘼𝙣𝙞𝙢𝙖𝙡... ** \n\n 𝙋𝙤𝙣𝙜 !! `{ms}` ms")
 
 
 @Riz.on(events.NewMessage(pattern="^/kickall"))
@@ -80,7 +80,7 @@ async def kickall(event):
          creator = RiZ.creator
          if not admin and not creator:
               return await event.reply("𝙄 𝘿𝙤𝙣'𝙩 𝙝𝙖𝙫𝙚 𝘽𝙖𝙣 𝙋𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣 𝙍𝙞𝙜𝙝𝙩𝙨 !!")
-         RiZoeL = await Riz.send_message(event.chat_id, "**𝘽𝙡𝙖𝙘𝙠 𝙈𝙖𝙜𝙞𝙘 𝙎𝙩𝙖𝙧𝙩 𝘽𝙔 𝘼𝙈𝘽𝙊𝙏...**")
+         RiZoeL = await Riz.send_message(event.chat_id, "**𝘽𝙡𝙖𝙘𝙠 𝙈𝙖𝙜𝙞𝙘 𝙎𝙩𝙖𝙧𝙩 𝘽𝙔 𝘼𝙉𝙄𝙈𝘼𝙇...**")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
