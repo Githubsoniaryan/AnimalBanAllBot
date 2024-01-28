@@ -1,6 +1,6 @@
-#  Copyright (c) 2023 @AM_YTBOTT - AMBOT
+#  Copyright (c) 2023 @AnimalJanwarrrr - Janwar
 # Telegram Ban All Bot 
-# Creator - AMBOT
+# Creator - Animal
 
 import logging
 import re
@@ -192,6 +192,6 @@ async def restart(e):
 
 
 print("\n\n")
-print("Your Ban All AMBot Deployed Successfully ✅")
+print("Your Ban All Bot Deployed Successfully ✅")
 
 Riz.run_until_disconnected()
