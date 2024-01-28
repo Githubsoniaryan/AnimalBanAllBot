@@ -95,14 +95,14 @@ async def kickall(event):
              except Exception as e:
                     print(str(e))
                     await asyncio.sleep(0.1)
-         await RiZoeL.edit(f"**𝙐𝙨𝙚𝙧𝙨 𝙆𝙞𝙘𝙠𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 𝘽𝙔 𝘼𝙉𝙄𝙈𝘼𝙇... ! \n\n 𝙆𝙞𝙘𝙠𝙚𝙙:** `{kimk}` \n **𝙏𝙤𝙩𝙖𝙡 𝙐𝙨𝙚𝙧𝙨:** `{all}`")
+         await RiZoeL.edit(f"**𝙐𝙨𝙚𝙧𝙨 𝙆𝙞𝙘𝙠𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮 𝘽𝙔 𝘼𝙉𝙄𝙈𝘼𝙇... ! \n\n 𝙆𝙞𝙘𝙠𝙚𝙙 𝙐𝙨𝙚𝙧𝙨:** `{kick}` \n **𝙏𝙤𝙩𝙖𝙡 𝙐𝙨𝙚𝙧𝙨:** `{all}`")
     
 
 @Riz.on(events.NewMessage(pattern="^/banall"))
 async def banall(event):
    if event.sender_id in SUDO_USERS:
      if not event.is_group:
-         Reply = f" Use This Cmd in Group."
+         Reply = f"𝙐𝙨𝙚 𝙏𝙝𝙞𝙨 𝘾𝙢𝙙 𝙞𝙣 𝙂𝙧𝙤𝙪𝙥."
          await event.reply(Reply)
      else:
          await event.delete()
