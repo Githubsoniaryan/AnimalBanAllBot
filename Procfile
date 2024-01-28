@@ -1,1 +1,1 @@
-worker: python3 Animal.py
+worker: python3 Ambot.py
